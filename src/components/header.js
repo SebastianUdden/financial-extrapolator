@@ -1,18 +1,19 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { WIDTH } from "./finance-extrapolator/constants"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#222`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: WIDTH,
         padding: `1.45rem 1.0875rem`,
       }}
     >
@@ -21,6 +22,7 @@ const Header = ({ siteTitle }) => (
           to="/"
           style={{
             color: `white`,
+            opacity: "0.9",
             textDecoration: `none`,
           }}
         >
